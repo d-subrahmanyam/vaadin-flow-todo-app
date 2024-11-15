@@ -1,4 +1,4 @@
-package com.example.application.views;
+package io.subbu.flow.todoapp.views;
 
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -11,6 +11,7 @@ import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.Layout;
+import com.vaadin.flow.router.PreserveOnRefresh;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import com.vaadin.flow.server.menu.MenuConfiguration;
 import com.vaadin.flow.server.menu.MenuEntry;
@@ -22,6 +23,7 @@ import java.util.List;
  */
 @Layout
 @AnonymousAllowed
+@PreserveOnRefresh
 public class MainLayout extends AppLayout {
 
     private H1 viewTitle;

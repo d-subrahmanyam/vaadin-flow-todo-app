@@ -1,4 +1,4 @@
-package com.example.application.views.about;
+package io.subbu.flow.todoapp.views.about;
 
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;

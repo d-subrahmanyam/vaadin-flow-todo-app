@@ -1,4 +1,4 @@
-package com.example.application.views.helloworld;
+package io.subbu.flow.todoapp.views.helloworld;
 
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.button.Button;
@@ -18,10 +18,11 @@ public class HelloWorldView extends HorizontalLayout {
     private Button sayHello;
 
     public HelloWorldView() {
-        name = new TextField("Your name");
+        name = new TextField("Your name", "Enter your name");
         sayHello = new Button("Say hello");
         sayHello.addClickListener(e -> {
             Notification.show("Hello " + name.getValue());
+            name.setValue("");
         });
         sayHello.addClickShortcut(Key.ENTER);
 
